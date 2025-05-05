@@ -1,0 +1,70 @@
+.complaints-container {
+  padding: 2rem;
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+
+.complaints-form-container {
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #1a2035 0%, #2a3446 100%);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-field {
+  margin-bottom: 2rem;
+}
+
+.form-field .MuiInputLabel-root,
+.form-field .MuiInputBase-input {
+  color: #b0bec5 !important; /* Changed from white to a subtle dark grayish-blue */
+  font-size: 1rem;
+}
+
+.form-field .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.form-field .MuiOutlinedInput-root:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-field .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 2px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #1976d2, #2196f3);
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #1565c0, #1976d2);
+}
+
+.MuiTextField-root {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Updated text color */
+.complaints-title {
+  color: #90a4ae; /* Soft desaturated blue-gray for a unique dark feel */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #ff4d4d !important;
+}

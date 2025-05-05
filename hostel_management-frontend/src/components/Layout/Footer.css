@@ -1,0 +1,84 @@
+.footer {
+  background: linear-gradient(135deg, #1a2035 0%, #2a3446 100%);
+  color: #e0e0e0;
+  padding: 40px 0 20px;  /* Reduced padding for a more compact look */
+  margin-top: auto;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer h6 {
+  color: #4dabf5;
+  margin-bottom: 16px;  /* Reduced spacing */
+  font-size: 1rem !important;  /* Reduced font size */
+  font-weight: 400 !important;  /* Adjusted for better readability */
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer h6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;  /* Reduced underline width */
+  height: 2px;
+  background: #4dabf5;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;  /* Slightly reduced spacing */
+}
+
+.footer-links a, .footer a {
+  color: #4dabf5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 0.9rem;  /* Slightly smaller text */
+}
+
+.footer-links a:hover, .footer a:hover {
+  color: #2196f3;
+  transform: translateX(4px);  /* Slightly reduced movement */
+}
+
+.footer-bottom {
+  margin-top: 40px;  /* Reduced margin */
+  padding-top: 20px;  /* Adjusted padding */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;  /* Reduced text size */
+}
+
+.footer-bottom p {
+  margin: 6px 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;  /* Reduced gap */
+  }
+}
+
+.footer-logo {
+  height: 35px;  /* Reduced from 40px */
+  width: auto;
+  margin-bottom: 12px;  /* Adjusted spacing */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.04);  /* Slightly reduced scaling effect */
+}

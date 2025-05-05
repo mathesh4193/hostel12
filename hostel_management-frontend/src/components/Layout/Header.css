@@ -1,0 +1,94 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1a2035 0%, #2a3446 100%) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  min-height: 48px !important; /* Reduced height */
+}
+
+/* Adjust main content margin */
+.main-content {
+  margin-top: 3px; /* Reduced margin */
+  min-height: calc(100vh - 48px); /* Adjusted for new header height */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Reduced gap */
+}
+
+.logo {
+  height: 30px; /* Smaller logo */
+  width: auto;
+}
+
+.title {
+  font-size: 0.9rem !important; /* Smaller font */
+  margin: 0 !important;
+}
+
+.nav-links button {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1a2035;
+    flex-direction: column;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+.nav-links button {
+  transition: all 0.3s ease !important;
+  color: #e0e0e0 !important;
+}
+
+.nav-links button:hover {
+  transform: translateY(-2px);
+  color: #4dabf5 !important;
+}
+
+/* Remove the margin-top since header is not fixed anymore */
+main {
+  padding-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.features-section {
+  scroll-margin-top: 64px; /* Adjust based on your header height */
+}
