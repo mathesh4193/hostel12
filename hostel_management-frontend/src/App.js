@@ -41,13 +41,14 @@ function App() {
           <Route path="/student-dashboard/outpass" element={<PrivateRoute><OutpassForm /></PrivateRoute>} />
           <Route path="/complaints" element={<PrivateRoute><Complaints /></PrivateRoute>} />
           <Route path="/attendance" element={<PrivateRoute><Attendance /></PrivateRoute>} />
+          
 
           {/* Warden Dashboard */}
           <Route path="/warden/dashboard" element={<PrivateRoute><WardenDashboard /></PrivateRoute>} />
           <Route path="/admin/dashboard" element={<PrivateRoute><AdminDashboard /></PrivateRoute>} />
 
           {/* OutpassForm Routes */}
-          <Route path="/student-dashboard/outpass" element={<OutpassForm />} />
+          <Route path="/student/dashboard/outpass" element={<OutpassForm />} />
           <Route path="/outpass" element={<OutpassForm />} />
           <Route path="/warden/students" element={<Students />} />
           {/* Inside your Router configuration */}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Alert, Card, Row, Col, Spinner } from 'react-bootstrap';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { login } from '../../services/authService'; // Assuming login is a service you have
 import './SignIn.css';
 
@@ -10,10 +10,10 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  
   const [passwordStrength, setPasswordStrength] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
 
   const handleSuccessfulLogin = (role) => {
     if (role === 'student') {
