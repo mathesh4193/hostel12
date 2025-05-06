@@ -1,0 +1,4 @@
+[build]
+  base = "hostel_management-frontend"
+  command = "npm run build"
+  publish = "build"
